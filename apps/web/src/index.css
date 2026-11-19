@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #0F766E;
+    --color-primary-hover: #115E59;
+    --color-accent: #D97706;
+    --color-accent-hover: #B45309;
+    --color-bg: #FAF8F5;
+    --color-surface: #FFFFFF;
+    --color-border: #E7E1D8;
+    --color-text: #1C1917;
+    --color-text-muted: #57534E;
+  }
+
+  html {
+    font-family: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+    color: var(--color-text);
+    background: var(--color-bg);
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
